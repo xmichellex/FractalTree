@@ -3,15 +3,15 @@ private int smallestBranch = 10;
 private double branchAngle = .3;  
 public void setup() 
 {   
-	size(640,500);    
+	size(640,600);    
 	noLoop(); 
 } 
 public void draw() 
 {   
 	background(0);   
 	stroke(0,255,0);   
-	line(320,500,320,360);   
-	drawBranches(320,360,100,3*Math.PI/2);  //will add later 
+	line(320,600,320,500);   
+	drawBranches(320,500,100,3*Math.PI/2);  //will add later 
 } 
 public void drawBranches(int x,int y, double branchLength, double angle) 
 {   
