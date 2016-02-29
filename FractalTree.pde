@@ -8,7 +8,10 @@ public void setup()
 } 
 public void draw() 
 {   
-	background(102, 255, 255);  
+	background(102, 255, 255);
+	noStroke();   
+	fill(255, 255, 0); 
+	ellipse(320, 700, 670, 670);
 	stroke(102,51,0); 
 	strokeWeight(30); 
 	line(320,640,320,520);   
@@ -34,7 +37,7 @@ public void drawBranches(int x,int y, double branchLength, double angle, double 
 		drawBranches(endX2, endY2, branchLength, angle2, 3*(width)/4); 
 	}
 	if(branchLength < smallestBranch+30)  { 
-		stroke(0, 51, 0); 
+		stroke(0, 40, 0); 
 	}    
 	else { 
 		stroke(102, 51, 0); 
